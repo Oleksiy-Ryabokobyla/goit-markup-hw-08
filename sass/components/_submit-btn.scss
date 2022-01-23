@@ -1,0 +1,42 @@
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 28px;
+
+  border-radius: 4px;
+  border-style: none;
+
+  color: var(--main-white-color);
+  background-color: var(--brand-color);
+
+  cursor: pointer;
+
+  transition: background-color 0.25s var(--timing-function),
+    box-shadow 0.25s var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--focused-brand-color);
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+
+  &--modal {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0px;
+    outline: none;
+
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+}
+
+.submit-btn__icon {
+  margin-left: 10px;
+  fill: var(--main-white-color);
+}

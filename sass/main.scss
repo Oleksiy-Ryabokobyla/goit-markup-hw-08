@@ -1,0 +1,23 @@
+//basic styles, styles reset , styles normalization
+@import "./base/reset";
+@import "./base/basic-styles";
+@import "./base/modern-normalize";
+
+//variables
+@import "./utils/variables";
+
+//components
+@import "./components/social-links";
+@import "./components/logo";
+@import "./components/submit-btn";
+
+// layaout parts
+@import "./layout/page-header";
+@import "./layout/hero-section";
+@import "./layout/benefits-section";
+@import "./layout/about-section";
+@import "./layout/team-section";
+@import "./layout/clients-section";
+@import "./layout/page-footer";
+@import "./layout/modal-window";
+@import "./layout/portfolio-page";
