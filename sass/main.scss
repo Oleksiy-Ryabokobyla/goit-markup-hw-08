@@ -1,23 +1,15 @@
-//basic styles, styles reset , styles normalization
-@import "./base/reset";
-@import "./base/basic-styles";
-@import "./base/modern-normalize";
-
-//variables
-@import "./utils/variables";
-
-//components
-@import "./components/social-links";
-@import "./components/logo";
-@import "./components/submit-btn";
-
-// layaout parts
-@import "./layout/page-header";
-@import "./layout/hero-section";
-@import "./layout/benefits-section";
-@import "./layout/about-section";
-@import "./layout/team-section";
-@import "./layout/clients-section";
-@import "./layout/page-footer";
-@import "./layout/modal-window";
-@import "./layout/portfolio-page";
+@import "./utils/var";
+@import "./utils/base";
+@import "./components/common";
+@import "./components/header+site-nav";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/backdrop+modal";
+@import "./components/section-benefits";
+@import "./components/section-work";
+@import "./components/social-media-accounts";
+@import "./components/section-team";
+@import "./components/section-clients";
+@import "./components/footer";
+@import "./components/filter";
+@import "./components/section-portfolio";

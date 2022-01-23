@@ -1,0 +1,100 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 20px;
+
+  @include texter(16px, 500, none);
+  font-family: Roboto, sans-serif;
+
+  line-height: 1.62;
+
+  border-radius: 4px;
+  border-color: transparent;
+
+  background-color: #f5f4fa;
+}
+
+.btn--main {
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  :focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+/*  класс Секция для секций */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+
+  // @media screen and (max-width: 1199px) {
+  //   width: 768px;
+  // }
+
+  // @media screen and (max-width: 767px) {
+  //   width: 480px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+/*class="section-title"  */ /* Скрывает заголовки */
+.section__title {
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  @include texter(28px, 700, none);
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    @include texter(36px, 700, none);
+    line-height: 1.17;
+  }
+
+  &--invisible {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}
